@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 24 Hour Code Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header style="top: 0; position: sticky; z-index: 1;">
+
+        <div class="header-left">
+            <span class="bold-text">WOMEN</span>
+            <span class="spaced-text">PLUS</span>
+            <span class="spaced-text">MEN</span>
+            <span class="spaced-text">ACCESSORIES</span>
+        </div>
+        
+        <div class="header-center">
+            <img src="Assets/logo.png" alt="Logo" class="logo">
+        </div>
+
+        <div class="header-right">
+        
+            <img src="Assets/bx_bx-user.png" alt="user" class="logo-right">
+            <img src="Assets/bx_bx-shopping-bag.png" alt="shoppingBag" class="logo-right" onclick="openShoppingBagModal()">
+
+            <img src="Assets/bx_bx-heart.png" alt="heart" class="logo-right">
+            <img src="Assets/bx_bx-support.png" alt="support" class="logo-right">
+            <img src="Assets/bx_bx-search.png" alt="search" class="logo-right">
+            <img src="Assets/Currency.png" alt="Currency" class="logo-right">
+            
+        </div>
+
+    </header>
+
+    <div class="gray-bar">
+        <div class="grey-container">
+            <img src="Assets/Frame-Crown.png" alt="frameCrown" class="gray-logo"> 
+            <span class="gray-text">Exlusive Deals for VIP 2 and up!</span>
+        </div>
+         
+        <div class="grey-container">
+            <img src="Assets/Frame-Star.png" alt="frameStar" class="gray-logo"> 
+            <span class="gray-text">Weekly New Arrivals</span>
+        </div>
+        
+        <div class="grey-container">
+            <img src="Assets/Frame-Delivery.png" alt="frameDelivery" class="gray-logo"> 
+            <span class="gray-text">Free Shipping On Orders Over $100</span>
+        </div>
+        
+        <div class="grey-container"> 
+            <img src="Assets/Frame-Track.png" alt="frameTrack" class="gray-logo"> 
+            <span class="gray-text">Tack Your Order</span>
+        </div>
+        
+        <div class="grey-container">
+            <img src="Assets/Frame-Discount.png" alt="frameDiscount" class="gray-logo"> 
+            <span class="gray-text">10% Off On Your First Order!</span>
+        </div>
+        
+    </div>
+       
+    <div class="image-container">
+        <img src="Assets/hero-slider.png" alt="hero-slider" class="gold-container"> 
+        <img src="Assets/Rectangle17.png" alt="Rectangle17" class="overlay-image"> 
+        <img src="Assets/glitter.png" alt="glitter" class="overlay-image-glitter"> 
+        <img src="Assets/blackFridayOff.png" alt="blackFridayOff" class="overlay-image-black-Friday"> 
+        <img src="Assets/showNowButton.png" alt="showNowButton" class="overlay-image-button">
+        <img src="Assets/VectorArrowLeft.png" alt="VectorArrowLeft" class="overlay-image-arrow-left">
+        <img src="Assets/VectorArrowRight.png" alt="VectorArrowRight" class="overlay-image-arrow-right">
+        <img src="Assets/Ellipse1.png" alt="Ellipse1" class="overlay-image-ellipse1"> 
+        <img src="Assets/Ellipse2.png" alt="Ellipse2" class="overlay-image-ellipse2">          
+    </div>
+
+    <div class="white-bar ">
+
+        <div class="white-bar-content">
+            <div class="row-container">
+                <span class="large-text">$5</span>
+                <span class="medium-text" style="margin-left: 10px; margin-top: 10px;">OFF</span>
+            </div>
+            
+            <br>
+            <span class="small-text">On Orders Above $50</span>
+        </div>
+
+        <div class="white-bar-content">
+            <div class="row-container">
+                <span class="large-text">$15</span>
+                <span class="medium-text" style="margin-left: 10px; margin-top: 10px;">OFF</span>
+            </div>
+            <br>
+            <span class="small-text">On Orders Above $75</span>
+        </div>
+
+        <div class="white-bar-content">
+            <div class="row-container">
+                <span class="large-text">$20</span>
+                <span class="medium-text" style="margin-left: 10px; margin-top: 10px;">OFF</span>
+            </div>
+           
+            <br>
+            <span class="small-text">On Orders Above $150</span>
+        </div>
+
+        <div class="white-bar-content">
+            <div class="row-container">
+                <span class="large-text">$30</span>
+                <span class="medium-text" style="margin-left: 10px; margin-top: 10px;">OFF</span>
+            </div>
+            <br>
+            <span class="small-text">On Orders Above $200</span>
+        </div>
+
+        <div class="white-bar-content">
+            <img src="Assets/checkOutButton.png" alt="checkOutButton" class="">
+        </div>
+
+    </div>
+
+    <div class="black-bar-image-container">
+        <img src="Assets/blackFridaybg.png" alt="blackFridaybg" class="black-bar">
+
+        <div class="black-bar-text">BLACK FRIDAY EXCLUSIVE</div>
+
+        <div class="black-bar-text-2">
+            FREE SHIPPING ON ALL ORDERS FOR
+            <br>
+            VIP 2 AND UP
+        </div>
+
+        <div class="black-bar-button">
+            <img src="Assets/showNowButton.png" alt="showNowButton" class="show-now-button">
+        </div>
+
+    </div>
+
+    <div class="white-bar-container">
+        <h2 class="trending-text">Now Trending</h2>
+
+        <p class="subtext">See what everyone's is wearing right now</p>
+
+        <div class="trending-fashion-image-container" style="margin-top: 20px;">
+
+            <div class="individual-image-container">
+                <img src="Assets/trendingFashion.png" alt="trendingFashion" class="imaze-size">
+
+                <span class="image-text ">WINTER FASHION</span>
+            </div>
+
+            <div class="individual-image-container">
+                <img src="Assets/boots.png" alt="boots" class="imaze-size">
+
+                <span class="image-text ">BOOTS</span>
+            </div>
+
+            <div class="individual-image-container">
+                <img src="Assets/nightOut.png" alt="nightOut" class="imaze-size">
+
+                <span class="image-text ">NIGHT OUT</span>
+            </div>
+
+            <div class="individual-image-container">
+                <img src="Assets/holidays.png" alt="holidays" class="imaze-size">
+
+                <span class="image-text ">HOLIDAYS</span>
+            </div>
+
+        </div>
+
+        <div class="trending-fashion-image-container" style="margin-top: 50px;">
+
+            <div class="individual-image-container">
+                <img src="Assets/outerwear.png" alt="outerwear" class="imaze-size">
+
+                <span class="image-text ">OUTERWEAR</span>
+            </div>
+
+            <div class="individual-image-container">
+                <img src="Assets/whiteDress.png" alt="whiteDress" class="imaze-size">
+
+                <span class="image-text ">WHITE DRESS</span>
+            </div>
+
+            <div class="individual-image-container">
+                <img src="Assets/sweaters.png" alt="sweaters" class="imaze-size">
+
+                <span class="image-text ">SWEATERS</span>
+            </div>
+
+            <div class="individual-image-container">
+                <img src="Assets/party.png" alt="party" class="imaze-size">
+
+                <span class="image-text ">PARTY</span>
+            </div>
+
+        </div>
+
+        <div class="hashtag-container">
+            <div class="hashtag-text-container">
+                #Thanksgiving
+            </div>
+    
+            <div class="hashtag-text-container">
+                #NewYears
+            </div>
+
+            <div class="hashtag-text-container">
+                #Knitted
+            </div>
+
+            <div class="hashtag-text-container">
+                #Panjamas
+            </div>
+
+            <div class="hashtag-text-container">
+                #WFH
+            </div>
+
+            <div class="hashtag-text-container">
+                #FallFashion
+            </div>
+        </div>
+        
+
+    </div>
+
+    <div class="new-arrival-image-container ">
+        <img src="Assets/newArrivalsBG.png" alt="newArrivalsBG" class="newArrivals-image">
+
+        <div class="new-arrival-text-container">
+            <div class="new-arrival-text-1">
+                NEW 
+            </div>
+
+            <div class="new-arrival-text-2">
+                ARRIVALS
+            </div>
+
+            <div class="new-arrival-text-3">
+                Get Ready for the holidays with us!
+            </div>
+        </div>
+
+        <div class="new-arrival-button">
+            <img src="Assets/shopNowButton.png" alt="shopNowButton" class="show-now-button">
+        </div>
+        
+    </div>
+
+    <div class="white-bar-container-2">
+        <h2 class="recently-text">Recently Bought</h2>
+
+        <div class="recently-bought-container">
+
+            <div class="recently-bought-image-container">
+                <img src="Assets/festiveLook.png" alt="festiveLook" class="recently-bought-imaze-size">
+
+                <span class="recently-bought-imaze-text">Festive Looks Rust Red Ribbed</span>
+                
+                <span class="recently-bought-imaze-text">Velvet Long Sleeve BodySuit</span>
+                
+                <span class="recently-bought-imaze-text-price">$38</span>
+            </div>
+
+            <div class="recently-bought-image-container">
+                <img src="Assets/chevronFlap.png" alt="chevronFlap" class="recently-bought-imaze-size">
+
+                <span class="recently-bought-imaze-text">Chevron Flap Crossbody Bag</span>
+                
+                <div class="recently-bought-price-container">
+                    <span class="recently-bought-imaze-text-price-red">$5.77</span>
+                    <span class="recently-bought-imaze-text-price-line">$39</span>
+                </div>
+                
+            </div>
+
+            <div class="recently-bought-image-container">
+                <img src="Assets/manilaTan.png" alt="manilaTan" class="recently-bought-imaze-size">
+
+                <span class="recently-bought-imaze-text">Manila Tan Multi Plaid</span>
+                
+                <span class="recently-bought-imaze-text">Oversized Fringe Scarf</span>
+                
+                <div class="recently-bought-price-container-2">
+                    <span class="recently-bought-imaze-text-price-red">$29</span>
+                    <span class="recently-bought-imaze-text-price-line">$39</span>
+                </div>
+            </div>
+
+            <div class="recently-bought-image-container">
+                <img src="Assets/diamantePuff.png" alt="diamantePuff" class="recently-bought-imaze-size">
+
+                <span class="recently-bought-imaze-text">Diamante Puff Sleeve Dress -</span>
+                
+                <span class="recently-bought-imaze-text">Black</span>
+                
+                <span class="recently-bought-imaze-text-price">$45.99</span>
+                
+            </div>
+
+            <div class="recently-bought-image-container">
+                <img src="Assets/bannethOpen.png" alt="bannethOpen" class="recently-bought-imaze-size">
+
+                <span class="recently-bought-imaze-text">Banneth Open Front Formal</span>
+                
+                <span class="recently-bought-imaze-text">Dress In Black</span>
+                
+                <div class="recently-bought-price-container-2">
+                    <span class="recently-bought-imaze-text-price-red">$69</span>
+                    <span class="recently-bought-imaze-text-price-line">$99.95</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="grey-bar-container">
+        <h2 class="inpso-text ">Your Next Inspo</h2>
+
+        <p class="subtext">Checkout who's wearing what by using #THREADEDInspo on Instagram</p>
+
+        <div class="inspo-image-container">
+            <img src="Assets/inspo1.png" alt="inspo1" class="inspo-image-size">
+            <img src="Assets/inspo2.png" alt="inspo2" class="inspo-image-size">
+            <img src="Assets/inspo3.png" alt="inspo3" class="inspo-image-size">
+            <img src="Assets/inspo4.png" alt="inspo4" class="inspo-image-size">
+            <img src="Assets/inspo5.png" alt="inspo5" class="inspo-image-size">
+        </div>
+
+        <div class="view-all-button-container">
+            VIEW ALL POSTS
+        </div>
+
+    </div>
+
+    <div class="newsletter-image-container">
+
+        <div class="black-bar-text-3">SIGN UP FOR EXCLUSIVE DEALS AND UPDATES</div>
+
+        <div class="input-container">
+            <input type="email" id="email" placeholder="Your Email Address">
+            <button type="submit">></button>
+        </div>
+    
+    </div>
+
+    <div class="white-bar-container-3">
+
+        <div class="footer-container">
+
+            <div class="footer-content-container">
+    
+                <span class="footer-heading">COMPANY INFO</span>
+            
+                <div style="margin-top: 20px;">
+                    <span class="footer-content">About THREADED</span>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <span class="footer-content">Affiliate</span>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <span class="footer-content">Blog</span>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <span class="footer-content">Careers</span>
+                </div>
+                
+                <div style="margin-top: 100px;"> 
+                    <span class="footer-content">©2021 THREADED All Right Reserved.</span>
+                </div>
+                
+              
+            </div>
+
+            <div class="footer-content-container" style="margin-left: -110px;">
+    
+                <span class="footer-heading">HELP & SUPPORT</span>
+            
+                <div style="margin-top: 20px;">
+                    <span class="footer-content">FAQ</span>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <span class="footer-content">Shipping</span>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <span class="footer-content">Returns</span>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <span class="footer-content">How to Order</span>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <span class="footer-content">How to Track</span>
+                </div>
+                  
+            </div>
+
+            <div class="footer-content-container">
+    
+                <span class="footer-heading">CUSTOMER CARE</span>
+            
+                <div style="margin-top: 20px;">
+                    <span class="footer-content">Contact Us</span>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <span class="footer-content">Payment Methods</span>
+                </div>
+                  
+            </div>
+
+            <div class="footer-content-container" style="margin-left: 180px;">
+    
+                <span class="footer-heading">FOLLOW US</span>
+            
+                <div class="social-media-icons-container">
+                    <img src="Assets/bx_bxl-facebook.png" alt="facebook" class="social-media-image-size" >
+                    <img src="Assets/bx_bxl-instagram.png" alt="instagram" class="social-media-image-size" style="margin-left: 10px;">
+                    <img src="Assets/bx_bxl-twitter.png" alt="twitter" class="social-media-image-size" style="margin-left: 10px;">
+                    <img src="Assets/bx_bxl-youtube.png" alt="youtube" class="social-media-image-size" style="margin-left: 10px;">
+                    <img src="Assets/bx_bxl-pinterest-alt.png" alt="pinterest-alt" class="social-media-image-size" style="margin-left: 10px;">
+                    <img src="Assets/bx_bxl-tiktok.png" alt="tiktok" class="social-media-image-size" style="margin-left: 10px;">
+                </div>
+
+                <span class="footer-heading">WE ACCEPT</span>
+
+                <div class="payment-icons-container">
+                    <img src="Assets/visa.png" alt="visa" class="payment-image-size" style="margin-left: 10px;">
+                    <img src="Assets/mastercard.png" alt="mastercard" class="payment-image-size" style="margin-left: 10px;">
+                    <img src="Assets/maestro.png" alt="maestro" class="payment-image-size" style="margin-left: 10px;">
+                    <img src="Assets/americanExpress.png" alt="americanExpress" class="payment-image-size" style="margin-left: 10px;">
+                    <img src="Assets/paypal.png" alt="paypal" class="payment-image-size" style="margin-left: 10px;">
+                </div>
+                  
+                <img src="Assets/footerLogo.png" alt="footerLogo" class="footer-image-size" style="margin-left: 10px; margin-top: 113px; margin-left: 570px;">
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<!-- Add to Cart Modal Dialog -->
+<div id="shoppingBagModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeShoppingBagModal()">×</span>
+        <div class="modal-body">
+            <!-- First Item -->
+            <div class="item-container">
+                <div class="item-image">
+                    <img src="Assets/cartImage1.png" alt="Hanna Gown">
+                </div>
+                <div class="item-details">
+                    <span class="best-seller">BEST SELLER</span>
+                    <p class="description-size-header">Hanna Gown </p>
+                    <p class="description-size-content">Bronx and Banco</p> 
+                    
+                    <p class="description-size-content-2">Size: S<br>Color: Multicolor<br>Qty: 1</p>
+                    <p class="item-price">4,883.94 lei</p>
+                </div>
+            </div>
+            <hr>
+            <!-- Second Item -->
+            <div class="item-container">
+                <div class="item-image">
+                    <img src="Assets/cartImage2.png" alt="Astrid Dress">
+                </div>
+                <div class="item-details">
+                    <p class="description-size-header">Astrid Dress </p>
+                    <p class="description-size-content">ELLIATT</p>   
+
+                    <p class="description-size-content-2">Size: S<br>Color: Multi<br>Qty: 1</p>
+                    <p class="item-price">1,449.69 lei</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="modal-footer">
+            <div class="modal-footer-row">
+                <div class="modal-header">
+                    <span>My Bag (2)</span>
+                </div>
+                <div class="total">
+                    <span>6,333.63 lei</span>
+                </div>
+            </div>
+            
+            <button class="checkout-button" onclick="openCheckOutModal()">BEGIN CHECKOUT</button>
+        </div>
+    </div>
+</div>
+
+<!-- Check Out Modal Dialog -->
+<div id="checkOutModal" class="modal-2">
+    <div class="modal-content-2">
+        
+        <span class="close-button-2" onclick="closeCheckOutModal()">×</span>
+
+        <div class="checkout-header-container" style="width: 60%;">
+            <div class="row-container-2">
+                <span class="shopping-bag">SHOPPING BAG (2)</span>
+            </div>
+            
+            <span class="sign-in">
+                <span class="underline">SIGN IN</span> to sync your bag across your devices
+            </span>
+
+            <div class="item-price-container">
+                <span class="item">ITEM</span>
+                <span class="price">PRICE</span>
+                
+            </div>
+            
+            <hr>
+        </div>
+        
+        <div class="modal-body-row">
+            <div class="modal-body">
+                <!-- First Item -->
+                <div class="item-container">
+                    <div class="item-image-add-cart">
+                        <img src="Assets/cartImage1.png" alt="Hanna Gown">
+                    </div>
+                    <div class="item-details">
+                        <div class="pink-bar-price-container">
+    
+                            <div class="pink-bar">
+                                <img src="Assets/bx_bx-shopping-bag.png" alt="shoppingBagModal" class="shopping-icon-size">
+                                <p class="dont-miss-header">
+                                    <span class="bold-text">DON'T MISS OUT!</span> Added to bag 23 times in the last 48 hrs
+                                </p>
+                            </div>
+    
+                            <p class="item-price-2">4,883.94 lei</p>
+    
+                        </div>
+                        
+    
+                        <span class="best-seller">BEST SELLER</span>
+                        <p class="description-size-header">Hanna Gown </p>
+                        <p class="description-size-content">Bronx and Banco</p> 
+                        
+                        <div class="description-container" style="margin-top: -25px;">
+                            <p class="description-size-content-3">Size: S,</p>
+                            <p class="description-size-content-3" style="margin-left: 5px;">Color: Multicolor,</p>
+                            <p class="description-size-content-3" style="margin-left: 5px;">Qty: 1</p>
+                        </div>
+                        
+                        <p class="description-size-content-4">Style No. BROR-WD106</p> 
+    
+                        <div class="action-container">
+                            <p class="description-size-content-5">save for later</p>
+                            <p class="description-size-content-5" style="margin-left: 30px;">move to favorites</p>
+                            <p class="description-size-content-5" style="margin-left: 30px;">remove</p>
+                            <p class="description-size-content-5" style="margin-left: 30px;">edit</p>
+                        </div>
+    
+                    </div>
+                </div>
+                <hr>
+                <!-- Second Item -->
+                <div class="item-container">
+                    <div class="item-image-add-cart">
+                        <img src="Assets/cartImage2.png" alt="Astrid Dress">
+                    </div>
+    
+                    <div class="item-details">
+    
+                        <div class="pink-bar-price-container">
+    
+                            <div class="pink-bar">
+                                <img src="Assets/bx_bx-shopping-bag.png" alt="shoppingBagModal" class="shopping-icon-size">
+                                <p class="dont-miss-header">
+                                    <span class="bold-text">IN DEMAND!</span> Sold 55 times in the last 48 hrs
+                                </p>
+                            </div>
+    
+                            <p class="item-price-3">1,449.69 lei</p>
+    
+                        </div>
+    
+                        <p class="description-size-header" style="margin-top: -5px;">Astrid Dress </p>
+                        <p class="description-size-content">ELLIATT</p>   
+    
+                        <div class="description-container" style="margin-top: -25px;">
+                            <p class="description-size-content-3">Size: S,</p>
+                            <p class="description-size-content-3" style="margin-left: 5px;">Color: Multicolor,</p>
+                            <p class="description-size-content-3" style="margin-left: 5px;">Qty: 1</p>
+                        </div>
+
+                        <p class="description-size-content-4">Style No. BROR-WD106</p> 
+    
+                        <div class="action-container">
+                            <p class="description-size-content-5">save for later</p>
+                            <p class="description-size-content-5" style="margin-left: 30px;">move to favorites</p>
+                            <p class="description-size-content-5" style="margin-left: 30px;">remove</p>
+                            <p class="description-size-content-5" style="margin-left: 30px;">edit</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="column-container">
+                <span class="orderSummary">ORDER SUMMARY</span>
+                <div class="white-bar-checkout">
+                    <div class="row-container-3">
+                        <p class="order-summary-text" style="margin-left: 10px;">Subtotal (2)</p>
+                        <p class="order-summary-text" style="margin-right: 10px;">6.333,63 lei</p>
+                    </div>
+
+                    <div class="row-container-3">
+                        <p class="order-summary-text" style="margin-left: 10px;">FREE shipping! details</p>
+                        <p class="order-summary-text" style="margin-right: 10px;">0,00 lei</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="row-container-3" style="margin-top: -15px;">
+                        <p class="order-summary-text-bold" style="margin-left: 10px;">Estimated Total</p>
+                        <p class="order-summary-text-bold" style="margin-right: 10px;">6.333,6 lei</p>
+                    </div>
+
+                    <p class="order-summary-text-red">VAT Included!</p>
+
+                    
+                </div>
+                <button class="checkout-button-2">CHECKOUT AS A GUEST</button>
+                <button class="checkout-button-2">SIGN FOR FASTER CHECKOUT</button>
+                <button class="checkout-button-3">
+                    <img src="Assets/paypal2.png" alt="Astrid Dress">
+                    Checkout</button>
+            </div>
+            
+
+        </div>
+
+        
+        <hr>
+
+        <div style="margin-top: 40px;">
+            <p class="description-size-content">Free Shipping on orders of US$ 100 or more</p>
+            <p class="description-size-content">30 day price match guarantee</p>    
+        </div>
+
+        <div class="payment-icons-container-2">
+            <img src="Assets/visa.png" alt="visa" class="payment-image-size" style="margin-left: 10px;">
+            <img src="Assets/mastercard.png" alt="mastercard" class="payment-image-size" style="margin-left: 10px;">
+            <img src="Assets/maestro.png" alt="maestro" class="payment-image-size" style="margin-left: 10px;">
+            <img src="Assets/americanExpress.png" alt="americanExpress" class="payment-image-size" style="margin-left: 10px;">
+            <img src="Assets/paypal.png" alt="paypal" class="payment-image-size" style="margin-left: 10px;">
+        </div>
+       
+
+    </div>
+</div>
+
+
+</html>
